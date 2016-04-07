@@ -1,0 +1,44 @@
+{
+  "right_top" : {
+    "arm_transform_x" : 0.66,
+    "arm_transfrom_y" : -0.1,
+    "flag_transform_x" : 0.23,
+    "flag_transform_y" : 0.68,
+    "flag_rotation_z" : 30
+  },
+  "right_center" : {
+    "arm_transform_x" : 0.707,
+    "arm_transfrom_y" : -0.16,
+    "flag_transform_x" : 0.222,
+    "flag_transform_y" : 0.4,
+    "flag_rotation_z" : 30
+  },
+  "right_down" : {
+    "arm_transform_x" : 0.65,
+    "arm_transfrom_y" : -0.296,
+    "flag_transform_x" : 0.6,
+    "flag_transform_y" : -0.13,
+    "flag_rotation_z" : 318
+  },
+  "left_top" : {
+    "arm_transform_x" : -0.66,
+    "arm_transfrom_y" : -0.1,
+    "flag_transform_x" : -0.23,
+    "flag_transform_y" : 0.68,
+    "flag_rotation_z" : 330
+  },
+  "left_center" : {
+    "arm_transform_x" : -0.714,
+    "arm_transfrom_y" : -0.16,
+    "flag_transform_x" : -0.243,
+    "flag_transform_y" : 0.4,
+    "flag_rotation_z" : 330
+  },
+  "left_down" : {
+    "arm_transform_x" : -0.65,
+    "arm_transfrom_y" : -0.296,
+    "flag_transform_x" : -0.6,
+    "flag_transform_y" : -0.13,
+    "flag_rotation_z" : 42
+  }
+}
