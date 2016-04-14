@@ -6,21 +6,21 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
-	private float _routineTime;
+    private float _routineTime;
     private int _successCnt;
-	private bool _motionCheker;
-
-	private Pica _pica;
+    private bool _motionCheker;
+    
+    private Pica _pica;
 
     private Text _missionText;
     
-	private string _missionStr;
+    private string _missionStr;
     private int _missionTextIndex;
     
     private Text _scoreBoard;
     private HpBarManager _hpBar;
     
-	enum FLAGMOTION{
+    enum FLAGMOTION{
 		FLAG_UP,
 		FLAG_DOWN,
 		FLAG_NOT_UP,
@@ -28,8 +28,8 @@ public class GameManager : MonoBehaviour {
 		FLAG_CHANGE,
 		FLAG_NOT_CHANGE
 	}
-
-	void Awake(){
+    
+    void Awake(){
         
         _routineTime = 3;
 
@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour {
 		StartCoroutine ("StartGameCoroutine");
 	}
 
-	IEnumerator StartGameCoroutine(){
+    IEnumerator StartGameCoroutine(){
 
 		while (true) {
 
