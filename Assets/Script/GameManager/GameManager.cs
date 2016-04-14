@@ -82,11 +82,13 @@ public class GameManager : MonoBehaviour {
 	}
 
 	IEnumerator TextGenerator(string missionText, int flagNum, int flagMotion){
-
+        
+        _missionText.text = "";
+        
 		char[] missionTextArr = missionText.ToCharArray ();
 
 		float routineTime = (_routineTime - 0.5f) / missionTextArr.Length;
-		Debug.Log (missionText);
+		//Debug.Log (missionText);
 
 		for(int i=0; i< missionTextArr.Length; i++){
 
@@ -131,7 +133,6 @@ public class GameManager : MonoBehaviour {
         if(armFlagMotion != flagMotion){
             
             successCheck = false;
-            Debug.Log("Success Boolean : " + successCheck);
             
             _successCnt = 1;
             DefaultRoutineTime();
@@ -172,7 +173,7 @@ public class GameManager : MonoBehaviour {
 			_pica._leftArm.getFlagIndex() : 
 			_pica._rightArm.getFlagIndex();
 
-		Debug.Log ("rand : " + randNum + ", flag : " + flagIndex);
+		//Debug.Log ("rand : " + randNum + ", flag : " + flagIndex);
 
 		if (randNum == (int)Pica.FLAGCOLOR.white) {
 			_missionStr += "백기";
@@ -248,7 +249,7 @@ public class GameManager : MonoBehaviour {
     /// GameOver
     public void GameOver(){
         
-        PlayerPrefs.SetString("SCORE_BOARD", _missionText.text);
+        PlayerPrefs.SetString("SCORE_BOARD", _scoreBoard.text);
         
         SceneManager.LoadScene("End");
     }
