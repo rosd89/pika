@@ -87,7 +87,7 @@ public class GameManager : MonoBehaviour {
         
 		char[] missionTextArr = missionText.ToCharArray ();
 
-		float routineTime = (_routineTime - 0.5f) / missionTextArr.Length;
+		float routineTime = (_routineTime - 1f) / missionTextArr.Length;
 		//Debug.Log (missionText);
 
 		for(int i=0; i< missionTextArr.Length; i++){
@@ -113,6 +113,7 @@ public class GameManager : MonoBehaviour {
         bool successCheck = true;
         // hp 계산 - 깃발 색
         if(armFlagNum != flagNum
+            && flagMotion != (int) FLAGMOTION.FLAG_CHANGE
             && flagMotion != (int) FLAGMOTION.FLAG_NOT_CHANGE
             && flagMotion != (int) FLAGMOTION.FLAG_NOT_DOWN
             && flagMotion != (int) FLAGMOTION.FLAG_NOT_UP){
